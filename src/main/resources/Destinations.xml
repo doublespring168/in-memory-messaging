@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Destinations>
+	<Destination>
+		<Name>Topic-1</Name>
+		<Type>topic</Type>
+		<Listener_Count>1</Listener_Count>
+		<Capacity>128</Capacity>
+	</Destination>
+	<Destination>
+		<Name>Queue-1</Name>
+		<Type>queue</Type>
+		<Listener_Count>1</Listener_Count>
+		<Capacity>128</Capacity>
+	</Destination>
+</Destinations>
