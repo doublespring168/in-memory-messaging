@@ -7,16 +7,16 @@ import com.sakumar.messaging.manager.ClientManager;
 
 public class MessageEventWorkHandler implements WorkHandler<MessageEvent> {
 
-	@Override
-	public void onEvent(MessageEvent event) throws Exception {
-		String clientId = event.getClientId();
-		if(null != clientId){
-			MessageListener messageListener = ClientManager.getMessageListener(clientId);
-			if(null != messageListener){
-				messageListener.onMessage(event.getMessage());
-			}
-		}
-		
-	}
+    @Override
+    public void onEvent(MessageEvent event) throws Exception {
+        String clientId = event.getClientId();
+        if (null != clientId) {
+            MessageListener messageListener = ClientManager.getMessageListener(clientId);
+            if (null != messageListener) {
+                messageListener.onMessage(event.getMessage());
+            }
+        }
+
+    }
 
 }

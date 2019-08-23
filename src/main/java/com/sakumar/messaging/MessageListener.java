@@ -1,5 +1,5 @@
 package com.sakumar.messaging;
 
 public interface MessageListener {
-	void onMessage(String message);
+    void onMessage(String message);
 }

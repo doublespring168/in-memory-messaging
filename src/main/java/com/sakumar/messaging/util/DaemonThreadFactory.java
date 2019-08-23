@@ -10,8 +10,9 @@ public class DaemonThreadFactory implements ThreadFactory {
 
     public DaemonThreadFactory(final String threadNamePrefix) {
         this.threadNamePrefix = threadNamePrefix;
-        
+
     }
+
     @Override
     public Thread newThread(final Runnable runnable) {
         final Thread thread = new Thread(runnable, threadNamePrefix + "-"
