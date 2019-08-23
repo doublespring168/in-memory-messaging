@@ -7,6 +7,7 @@ public class MessagePublisher implements Runnable {
         this.destination = destination;
     }
 
+    @Override
     public void run() {
         for (int i = 0; i < 1000; i++) {
             MessagingUtil.post(destination, "Hello-" + i);

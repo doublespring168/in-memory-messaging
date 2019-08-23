@@ -11,6 +11,7 @@ public class AsyncMessageListenerImpl extends MessageListenerImpl implements Asy
         this.executorService = executorService;
     }
 
+    @Override
     public ExecutorService getExecutorService() {
         // TODO Auto-generated method stub
         return executorService;

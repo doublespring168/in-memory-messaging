@@ -12,6 +12,7 @@ public class MessageDeligator implements Runnable {
         this.messageListener = messageListener;
     }
 
+    @Override
     public void run() {
         try {
             messageListener.onMessage(message.getMessage());
